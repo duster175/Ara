@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Инновационные технологии в геологии</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1f3c58;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #2f5d7c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    section {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #1f3c58;
+    }
+    footer {
+      background-color: #1f3c58;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body><header>
+  <h1>Инновационные технологии в геологии</h1>
+  <p>Современные подходы к изучению Земли</p>
+</header><nav>
+  <a href="#about">О теме</a>
+  <a href="#tech">Технологии</a>
+  <a href="#future">Будущее</a>
+</nav><div class="container">
+  <section id="about">
+    <h2>О теме</h2>
+    <p>
+      Геология сегодня активно использует инновационные технологии для более точного изучения строения Земли,
+      поиска полезных ископаемых и прогнозирования природных процессов. Современные методы позволяют получать
+      данные быстрее и с высокой точностью.
+    </p>
+  </section>  <section id="tech">
+    <h2>Ключевые технологии</h2>
+    <ul>
+      <li>Геоинформационные системы (ГИС)</li>
+      <li>Дистанционное зондирование Земли</li>
+      <li>3D-моделирование геологических структур</li>
+      <li>Искусственный интеллект и машинное обучение</li>
+      <li>Дроны и автоматизированные датчики</li>
+    </ul>
+  </section>  <section id="future">
+    <h2>Будущее геологии</h2>
+    <p>
+      В будущем геология будет всё больше опираться на цифровые технологии и автоматизацию.
+      Это повысит безопасность исследований, снизит затраты и позволит глубже понять процессы,
+      происходящие внутри планеты.
+    </p>
+  </section>
+</div><footer>
+  <p>© 2026 Инновационные технологии в геологии</p>
+</footer></body>
+</html>
