@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Инновационные технологии в геологии</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+header p {
+  max-width: 700px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00e5ff;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #00e5ff;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Анимация появления */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+  </style>
+</head>
+<body>  <nav>
+    <strong>ГеоТех</strong>
+    <div>
+      <a href="#about">О технологии</a>
+      <a href="#tech">Направления</a>
+      <a href="#future">Будущее</a>
+    </div>
+  </nav>  <header>
+    <h1>Инновационные технологии в геологии</h1>
+    <p>
+      Современная геология объединяет науку, цифровые технологии и искусственный интеллект 
+      для более точного изучения Земли и рационального использования её ресурсов.
+    </p>
+  </header>  <section id="about">
+    <h2 class="fade-in">Что меняет геологию сегодня</h2>
+    <p class="fade-in" style="max-width:800px; margin:0 auto; text-align:center;">
+      Инновационные технологии позволяют исследовать недра планеты без масштабных разрушений,
+      повышая точность прогнозов и снижая экологические риски.
+    </p>
+  </section>  <section id="tech">
+    <h2 class="fade-in">Ключевые направления</h2>
+    <div class="cards">
+      <div class="card fade-in">
+        <h3>Искусственный интеллект</h3>
+        <p>Анализ геологических данных, прогноз месторождений и автоматизация интерпретации.</p>
+      </div>
+      <div class="card fade-in">
+        <h3>Дистанционное зондирование</h3>
+        <p>Использование спутников и дронов для картирования и мониторинга Земли.</p>
+      </div>
+      <div class="card fade-in">
+        <h3>3D и 4D‑моделирование</h3>
+        <p>Создание цифровых моделей недр для анализа процессов во времени.</p>
+      </div>
+      <div class="card fade-in">
+        <h3>Геофизические сенсоры</h3>
+        <p>Высокоточные приборы для исследования структуры земной коры.</p>
+      </div>
+    </div>
+  </section>  <section id="future">
+    <h2 class="fade-in">Взгляд в будущее</h2>
+    <p class="fade-in" style="max-width:800px; margin:0 auto; text-align:center;">
+      В будущем геология станет полностью цифровой наукой, где автоматизированные системы 
+      и ИИ будут играть ключевую роль в устойчивом развитии и охране окружающей среды.
+    </p>
+  </section>  <footer>
+    © 2026 | Инновационные технологии в геологии | Проект для GitHub Pages
+  </footer>  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script></body>
+  </html>
